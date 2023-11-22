@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="pro2.css">
+</head>
+<body>
+    <div class="box">
+        <div class="button">
+            <div id="btn"></div>
+         <button type="button" class="login" onclick="log()">Log In</button>
+         <button type="button" class="register" onclick="reg()">Register</button>
+        </div>
+        <form id="log" class="input-grp">
+            
+            <label for="gmail" class="gmail">Gmail</label>
+            <input type="email" id="gmail" name="gmail" placeholder="username@gmail.com" required><br>
+            <label for="pswd" class="pwd">Password</label>
+            <input type="password" id="pswd" name="pswd" minlength="8" maxlength="15" required><br>
+            <br><input type="checkbox" class="rem">
+            <span> Remember me</span>
+            <button type="button" class="logbutton">Log In</button>
+        </form>
+        <form id="reg" class="input-grp">
+            <label for="fname" class="fname">First Name</label>
+            <input type="text" id="fname" name="fname" minlength="6" maxlength="10" required><br>
+            <label for="lname" class="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" minlength="6" maxlength="15" required><br>
+            <label for="gmail" class="gmail">Gmail</label>
+            <input type="email" id="gmail" name="gmail" placeholder="username@gmail.com" required><br>
+            <label for="pswd" class="pwd">Password</label>
+            <input type="password" id="pswd" name="pswd" minlength="8" maxlength="15" required><br>
+            <br><input type="checkbox" class="rem">
+            <span>I agree to the terms & conditions</span>
+            <button type="button" class="logbutton">Register</button>
+        </form>
+    </div>
+    <script>
+        var x=document.getElementById("log");
+        var y=document.getElementById("reg");
+        var z=document.getElementById("btn");
+
+        function reg(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function log(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+    </script>
+</body>
+</html>
